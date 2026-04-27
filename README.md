@@ -1,13 +1,13 @@
 vmPing
 ======
-[![Donate to this project using PayPal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=flat)](https://paypal.me/SmithRyn/15)
+[![Donate to this project using PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat)](https://www.paypal.com/donate?hosted_button_id=BAZARTE_DONATE)
 [![Join the Discord chat](https://img.shields.io/discord/817276291262447697.svg?style=flat)](https://discord.gg/Guf66Zk6US)
-[![Total downloads](https://img.shields.io/github/downloads/r-smith/vmping/total)](https://github.com/R-Smith/vmPing/releases)
+[![Total downloads](https://img.shields.io/github/downloads/bazarte/vmPing/total)](https://github.com/bazarte/vmPing/releases)
 
 vmPing (Visual Multi Ping) is a graphical ping utility for monitoring multiple hosts.  Numerous host monitors can be added and removed, and each monitor dynamically resizes with the application window.  Color-coding allows you to tell at a glance the status of each host.  In addition to standard ICMP pings, you can also perform a TCP 'port ping', where the application continuously connects to a specified port and displays whether or not the port is open.  A fast trace route utility and a basic packet generator / stress tester is also included.
 
-**[Click here to download the latest release](https://github.com/R-Smith/vmPing/releases/latest/download/vmPing.exe)**
-##### (1.3.23 released on April 13, 2022)
+**[Click here to download the latest release](https://github.com/bazarte/vmPing/releases/download/v1.3.24/vmPing.exe)**
+##### (1.3.24 released on April 20, 2026)
 
 ##### Notes
 * There is no installer.  Just run the .exe.
@@ -28,6 +28,10 @@ Screenshots
 
 Recent Changes
 --------------
+### Version 1.3.24
+* New feature: **My Network Info** panel (Ctrl+I or menu → My Network Info). Opens a window showing your full network configuration at a glance: all active adapters with IPv4 address, subnet mask, default gateway, DNS servers, MAC address, and DHCP status. Also fetches and displays your external/public IP address. Every value has a one-click Copy button.
+
+
 ### Version 1.3.23
 * Fix: Force software rendering. This should fix high GPU usage on some video cards.
 * Fix: Loading a favorite on startup was not using the column count for the favorite.
@@ -185,4 +189,4 @@ Features
 Donations
 ---------
 If this tool has been useful to you, consider donating using PayPal.
-[![Donate to this project using PayPal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=flat)](https://paypal.me/SmithRyn/15)
+[![Donate to this project using PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat)](https://www.paypal.com/donate?hosted_button_id=BAZARTE_DONATE)
