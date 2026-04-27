@@ -139,6 +139,15 @@
                     <Image Source="{StaticResource icon.chevron-circle-down}" VerticalAlignment="Center" HorizontalAlignment="Center" Width="16" Height="16"/>
                 </MenuItem.Icon>
 
+                <!-- Menu: My Network Info -->
+                <MenuItem Name="NetworkInfoMenu"
+                          Header="My Network Info"
+                          InputGestureText="Ctrl+I">
+                    <MenuItem.Icon>
+                        <Image Source="{StaticResource icon.info-circle}" VerticalAlignment="Center" Width="16" Height="16"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
                 <!-- Menu: Options -->
                 <MenuItem Name="OptionsMenu"
                           Header="{x:Static resource:Strings.Menu_Options}"

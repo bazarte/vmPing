@@ -153,6 +153,9 @@
     <Compile Include="UI\UsageWindow.xaml.cs">
       <DependentUpon>UsageWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\NetworkInfoWindow.xaml.cs">
+      <DependentUpon>NetworkInfoWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="ResourceDictionaries\ButtonStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -298,6 +301,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\UsageWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\NetworkInfoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

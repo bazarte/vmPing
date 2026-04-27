@@ -25,6 +25,7 @@ namespace vmPing.UI
         public static RoutedCommand AddProbeCommand = new RoutedCommand();
         public static RoutedCommand MultiInputCommand = new RoutedCommand();
         public static RoutedCommand StatusHistoryCommand = new RoutedCommand();
+        public static RoutedCommand NetworkInfoCommand = new RoutedCommand();
 
         public MainWindow()
         {
@@ -157,7 +158,11 @@ namespace vmPing.UI
             CommandBindings.Add(new CommandBinding(AddProbeCommand, AddProbeExecute));
             CommandBindings.Add(new CommandBinding(MultiInputCommand, MultiInputWindowExecute));
             CommandBindings.Add(new CommandBinding(StatusHistoryCommand, StatusHistoryExecute));
-            
+            CommandBindings.Add(new CommandBinding(NetworkInfoCommand, NetworkInfoExecute));
+
+            InputBindings.Add(new InputBinding(
+                NetworkInfoCommand,
+                new KeyGesture(Key.I, ModifierKeys.Control)));
             InputBindings.Add(new InputBinding(
                 OptionsCommand,
                 new KeyGesture(Key.F10)));
@@ -186,6 +191,7 @@ namespace vmPing.UI
                 StatusHistoryCommand,
                 new KeyGesture(Constants.StatusHistoryKeyBinding)));
 
+            NetworkInfoMenu.Command = NetworkInfoCommand;
             OptionsMenu.Command = OptionsCommand;
             StartStopMenu.Command = StartStopCommand;
             HelpMenu.Command = HelpCommand;
@@ -634,6 +640,19 @@ namespace vmPing.UI
             else if (Probe.StatusHistoryWindow.IsLoaded)
             {
                 Probe.StatusHistoryWindow.Focus();
+            }
+        }
+
+        private void NetworkInfoExecute(object sender, ExecutedRoutedEventArgs e)
+        {
+            if (NetworkInfoWindow._OpenWindow == null)
+            {
+                var wnd = new NetworkInfoWindow { Owner = this };
+                wnd.Show();
+            }
+            else
+            {
+                NetworkInfoWindow._OpenWindow.Activate();
             }
         }
 
