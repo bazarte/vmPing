@@ -8,6 +8,8 @@ vmPing (Visual Multi Ping) is a graphical ping utility for monitoring multiple h
 
 **[Click here to download the latest release](https://github.com/bazarte/vmPing/releases/download/v1.3.24/vmPing.exe)**
 ##### (1.3.24 released on April 20, 2026)
+**[View the latest updated source on GitHub](https://github.com/bazarte/vmPing/tree/main)**
+##### (Current development version includes the refreshed My Network Info window styling and updated menu placement)
 
 ##### Notes
 * There is no installer.  Just run the .exe.
@@ -28,6 +30,10 @@ Screenshots
 
 Recent Changes
 --------------
+### Current main branch
+* Updated **My Network Info** to better match the visual style of the other vmPing utility windows.
+* Moved **My Network Info** in the main dropdown so it now appears between **Flood Host** and **vmPing**.
+
 ### Version 1.3.24
 * New feature: **My Network Info** panel (Ctrl+I or menu → My Network Info). Opens a window showing your full network configuration at a glance: all active adapters with IPv4 address, subnet mask, default gateway, DNS servers, MAC address, and DHCP status. Also fetches and displays your external/public IP address. Every value has a one-click Copy button.
 
