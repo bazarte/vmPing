@@ -6,7 +6,7 @@ vmPing
 
 vmPing (Visual Multi Ping) is a graphical ping utility for monitoring multiple hosts.  Numerous host monitors can be added and removed, and each monitor dynamically resizes with the application window.  Color-coding allows you to tell at a glance the status of each host.  In addition to standard ICMP pings, you can also perform a TCP 'port ping', where the application continuously connects to a specified port and displays whether or not the port is open.  A fast trace route utility and a basic packet generator / stress tester is also included.
 
-**[View version 1.3.25 on GitHub](https://github.com/bazarte/vmPing/tree/v1.3.25)**
+**[Click here to download the latest release](https://github.com/bazarte/vmPing/releases/latest)**
 ##### (1.3.25 released on April 27, 2026)
 
 ##### Notes
